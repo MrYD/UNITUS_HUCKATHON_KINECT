@@ -569,7 +569,7 @@ Transform:
   - {fileID: 2037787760}
   - {fileID: 748274836}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &183312765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,8 +1407,8 @@ Transform:
   m_PrefabParentObject: {fileID: 419878, guid: 40eebe58c29990e4d931f0fecfff7788, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 389601669}
-  m_LocalRotation: {x: 4.71482098e-09, y: 2.71934368e-08, z: 4.09781933e-08, w: 1}
-  m_LocalPosition: {x: -.0662710667, y: -.00382446381, z: -2.220446e-18}
+  m_LocalRotation: {x: 5.18521048e-09, y: -.0114865825, z: 4.09213357e-08, w: .999934077}
+  m_LocalPosition: {x: -.0662710443, y: -.00382448733, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1075884839}
@@ -2172,7 +2172,7 @@ Transform:
   - {fileID: 626926646}
   - {fileID: 1459770219}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!4 &626926646
 Transform:
   m_ObjectHideFlags: 0
@@ -4560,6 +4560,52 @@ Transform:
   - {fileID: 1393996835}
   m_Father: {fileID: 1672345399}
   m_RootOrder: 0
+--- !u!1 &1019342985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1019342987}
+  - 114: {fileID: 1019342986}
+  m_Layer: 0
+  m_Name: '@Kinectroot'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1019342986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1019342985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef7159649a30e6408e5562248ae7e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorTargets: []
+  depthTargets: []
+  users:
+  - {fileID: 0}
+  - {fileID: 0}
+  serviceReconnectKey: 97
+  nuiServiceV2Path: C:\Program Files\SystemFriend\NuiService\NuiServiceV2.exe
+--- !u!4 &1019342987
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1019342985}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.615697861, y: 1.32950282, z: -1.47895193}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!1 &1024475670
 GameObject:
   m_ObjectHideFlags: 0
@@ -4754,8 +4800,8 @@ Transform:
   m_PrefabParentObject: {fileID: 448304, guid: 40eebe58c29990e4d931f0fecfff7788, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1075884838}
-  m_LocalRotation: {x: 2.50875214e-08, y: 2.5891957e-08, z: -3.63215804e-08, w: 1}
-  m_LocalPosition: {x: -.250515252, y: -.00477999356, z: -.00468850136}
+  m_LocalRotation: {x: .000514308224, y: 2.5908701e-08, z: -3.63343311e-08, w: .999999881}
+  m_LocalPosition: {x: -.250515223, y: -.0047800336, z: -.00468850741}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1455550682}
@@ -5772,6 +5818,7 @@ GameObject:
   - 114: {fileID: 1420513086}
   - 114: {fileID: 1420513085}
   - 114: {fileID: 1420513084}
+  - 114: {fileID: 1420513088}
   m_Layer: 0
   m_Name: Query-Chan
   m_TagString: Untagged
@@ -5987,6 +6034,45 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &1420513088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420513083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecf450555b844884594f4b05b0579a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpineBase: {fileID: 1416334313}
+  SpineMid: {fileID: 95002761}
+  Neck: {fileID: 1164141862}
+  Head: {fileID: 35444704}
+  ShoulderLeft: {fileID: 2074665005}
+  ElbowLeft: {fileID: 1075884838}
+  WristLeft: {fileID: 1455550681}
+  HandLeft: {fileID: 1455550681}
+  ShoulderRight: {fileID: 783498670}
+  ElbowRight: {fileID: 2140389639}
+  WristRight: {fileID: 2071891388}
+  HandRight: {fileID: 2071891388}
+  HipLeft: {fileID: 1648143886}
+  KneeLeft: {fileID: 120110140}
+  AnkleLeft: {fileID: 1883935735}
+  FootLeft: {fileID: 754600149}
+  HipRight: {fileID: 1136124618}
+  KneeRight: {fileID: 902536551}
+  AnkleRight: {fileID: 431939568}
+  FootRight: {fileID: 300116467}
+  SpineShoulder: {fileID: 95002761}
+  HandTipLeft: {fileID: 1455550681}
+  ThumbLeft: {fileID: 1455550681}
+  HandTipRight: {fileID: 2071891388}
+  ThumbRight: {fileID: 2071891388}
+  IsHandLeftGripping: 0
+  IsHandRightGripping: 0
+  scale: {x: 1, y: 1, z: 1}
 --- !u!1 &1422038299
 GameObject:
   m_ObjectHideFlags: 0
@@ -6197,7 +6283,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &1478563619
 GameObject:
   m_ObjectHideFlags: 0
@@ -6384,7 +6470,7 @@ Transform:
   m_PrefabParentObject: {fileID: 428436, guid: 40eebe58c29990e4d931f0fecfff7788, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1507347769}
-  m_LocalRotation: {x: -.0937465355, y: .697855115, z: .707468987, w: .0608067326}
+  m_LocalRotation: {x: -.0937465429, y: .697855175, z: .707469046, w: .0608067364}
   m_LocalPosition: {x: -.0554340295, y: .00173068431, z: .0986537337}
   m_LocalScale: {x: 1.00000036, y: 1.0000006, z: 1.00000048}
   m_Children:
@@ -6512,8 +6598,8 @@ Transform:
   m_PrefabParentObject: {fileID: 428376, guid: 40eebe58c29990e4d931f0fecfff7788, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1538580885}
-  m_LocalRotation: {x: -.496783704, y: .503195763, z: .496783704, w: .503195763}
-  m_LocalPosition: {x: -.0876668319, y: -.000304475107, z: 1.78458706e-08}
+  m_LocalRotation: {x: -.631330013, y: .511774182, z: .394644797, w: .428678334}
+  m_LocalPosition: {x: -.0876663029, y: -.000304544345, z: 1.22466304e-08}
   m_LocalScale: {x: 1.00000036, y: 1.0000006, z: 1.00000048}
   m_Children:
   - {fileID: 788722152}
@@ -8324,7 +8410,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1 &2062849459
 GameObject:
   m_ObjectHideFlags: 0
@@ -8706,6 +8792,7 @@ GameObject:
   - 114: {fileID: 2132779555}
   - 114: {fileID: 2132779554}
   - 114: {fileID: 2132779553}
+  - 114: {fileID: 2132779557}
   m_Layer: 0
   m_Name: unitychan
   m_TagString: Untagged
@@ -8796,6 +8883,45 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &2132779557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2132779552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecf450555b844884594f4b05b0579a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpineBase: {fileID: 206909133}
+  SpineMid: {fileID: 273459935}
+  Neck: {fileID: 721551822}
+  Head: {fileID: 723962065}
+  ShoulderLeft: {fileID: 1489118861}
+  ElbowLeft: {fileID: 1649086883}
+  WristLeft: {fileID: 1919048643}
+  HandLeft: {fileID: 1555652989}
+  ShoulderRight: {fileID: 1063549148}
+  ElbowRight: {fileID: 271615084}
+  WristRight: {fileID: 948043534}
+  HandRight: {fileID: 678386641}
+  HipLeft: {fileID: 269325769}
+  KneeLeft: {fileID: 965553012}
+  AnkleLeft: {fileID: 1880120157}
+  FootLeft: {fileID: 1650132728}
+  HipRight: {fileID: 417406474}
+  KneeRight: {fileID: 305743171}
+  AnkleRight: {fileID: 1544079568}
+  FootRight: {fileID: 962076467}
+  SpineShoulder: {fileID: 721551822}
+  HandTipLeft: {fileID: 1677876553}
+  ThumbLeft: {fileID: 1187232739}
+  HandTipRight: {fileID: 698326746}
+  ThumbRight: {fileID: 414047372}
+  IsHandLeftGripping: 0
+  IsHandRightGripping: 0
+  scale: {x: 1, y: 1, z: 1}
 --- !u!1 &2140389639
 GameObject:
   m_ObjectHideFlags: 0
