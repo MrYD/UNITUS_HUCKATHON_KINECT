@@ -29,21 +29,14 @@ public class InputAsistant : MonoBehaviour
             SphereCloneList.Add((GameObject)Instantiate(Sphere, new Vector3(12 * i + desPoint, 0, 10), new Quaternion()));
         }
         inputFlag = false;
-        time = 0;
+
+
+        startInput();
     }
 
     // Update is called once per frame
     void FixedUpdate()
-    {
-        time++;
-        if (time == 50)
-        {
-            startInput();
-        }
-        if (time == 500)
-        {
-            endInput();
-        }
+    {  
         Input(inputFlag);
     }
 
@@ -119,12 +112,14 @@ internal class ExtendinWave
     public void extend(float f)
     {
         gameObject.transform.localScale += new Vector3(f, f, f);
+        gameObject.GetComponent<SpriteRenderer>().color-=new Color(0,0,0,f);
         sum += f;
     }
 
     public void minify()
     {
         gameObject.transform.localScale -= new Vector3(sum, sum, sum);
+        gameObject.GetComponent<SpriteRenderer>().color +=new Color(0,0,0,sum);
         sum = 0;
     }
 
