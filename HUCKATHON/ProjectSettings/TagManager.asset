@@ -3,7 +3,34 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - SpinBase
+  - SpinMid
+  - Neck
+  - Head
+  - ShpulderLeft
+  - ElbowLeft
+  - WristLeft
+  - HandLeft
+  - ShoulderRight
+  - ElbowRight
+  - ElbowRight
+  - WristRight
+  - HandRight
+  - HipLeft
+  - KneeLeft
+  - AnkleLeft
+  - FootLeft
+  - HipRight
+  - KneeRight
+  - AnkleRight
+  - FootRight
+  - SpineShoulder
+  - HandTipLeft
+  - ThumbLeft
+  - HandTipRight
+  - ThumbRight
+  - Count
   layers:
   - Default
   - TransparentFX
