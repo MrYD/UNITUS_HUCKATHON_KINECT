@@ -36,7 +36,7 @@ public class InputAsistant : MonoBehaviour
     void FixedUpdate()
     {
         time++;
-        if (time == 50) 
+        if (time == 50)
         {
             startInput();
         }
@@ -60,11 +60,15 @@ public class InputAsistant : MonoBehaviour
 
     private void Input(bool inputFlag)
     {
-       
+
         bool destroyFlag = false;
-        GhostSphereClone1.update(destroyFlag, 0.1f);
-        GhostSphereClone2.update(-0.002f);
-        if (!inputFlag) return; 
+
+        if (!inputFlag)
+        {
+            GhostSphereClone1.update(destroyFlag, 0.1f);
+            GhostSphereClone2.update(-0.002f);
+            return;
+        }
         foreach (var itr in SphereCloneList)
         {
             itr.transform.position -= new Vector3(0.1f, 0, 0);
@@ -83,8 +87,8 @@ public class InputAsistant : MonoBehaviour
                 destroyFlag = true;
             }
         }
-       
-
+        GhostSphereClone1.update(destroyFlag, 0.1f);
+        GhostSphereClone2.update(-0.002f);
         if (destroyFlag)
         {
             Destroy(SphereCloneList.First());
@@ -95,7 +99,7 @@ public class InputAsistant : MonoBehaviour
     }
 
 
-   
+
 }
 
 internal class ExtendinWave
