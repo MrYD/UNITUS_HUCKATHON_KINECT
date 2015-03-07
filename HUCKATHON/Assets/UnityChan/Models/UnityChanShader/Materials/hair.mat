@@ -2,14 +2,13 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 5
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: hair
   m_Shader: {fileID: 4800000, guid: 235ca6f7bbc0ead4990f386a7ec24292, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
+  m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
@@ -59,16 +58,16 @@ Material:
     m_Floats:
       data:
         first:
-          name: _SpecularPower
-        second: 20
+          name: _FalloffPower
+        second: .5
       data:
         first:
           name: _EdgeThickness
         second: .5
       data:
         first:
-          name: _FalloffPower
-        second: .5
+          name: _SpecularPower
+        second: 20
     m_Colors:
       data:
         first:
