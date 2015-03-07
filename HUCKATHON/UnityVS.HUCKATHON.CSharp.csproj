@@ -68,7 +68,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ConectToIronRuby\Launcher.cs" />
     <Compile Include="Assets\IModelControl.cs" />
+    <Compile Include="Assets\InputAssistant\InputAsistant.cs" />
     <Compile Include="Assets\Kinect2Lib\Kinect2LibMock.cs" />
     <Compile Include="Assets\ModelController.cs" />
     <Compile Include="Assets\PQAssets\Query-Chan\Scripts\1.Locomotion\LocomotionGUI.cs" />
@@ -96,7 +98,7 @@
     <Compile Include="Assets\SfNuiControl\Script\NuiUtils.cs" />
     <Compile Include="Assets\SfNuiControl\Script\UserModel.cs" />
     <Compile Include="Assets\SfNuiControl\UserBodyBase.cs" />
-    <Compile Include="Assets\UnityChanController.cs" />
+    <Compile Include="Assets\TextBehaviour.cs" />
     <Compile Include="Assets\UnityChan\Scripts\AutoBlink.cs" />
     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
     <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
@@ -109,6 +111,7 @@
     <Compile Include="Assets\UnityChan\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
     <Compile Include="Assets\UnityChan\SplashScreen\Scripts\SplashScreen.cs" />
+    <Compile Include="Assets\UnityChanController.cs" />
     <Compile Include="Assets\UtilityExtension.cs" />
   </ItemGroup>
   <ItemGroup>
