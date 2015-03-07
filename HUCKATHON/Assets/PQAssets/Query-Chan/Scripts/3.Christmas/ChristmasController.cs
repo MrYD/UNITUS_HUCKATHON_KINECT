@@ -39,7 +39,7 @@ public class ChristmasController : MonoBehaviour {
 		queryChan.GetComponent<QueryMechanimController>().ChangeAnimation(QueryMechanimController.QueryChanAnimationType.CH_Dance);
 		PosDefault = CameraObj.transform.localPosition;
 		RotDefault = CameraObj.transform.localEulerAngles;
-		FovDefault = CameraObj.camera.fieldOfView;
+		FovDefault = CameraObj.GetComponent<Camera>().fieldOfView;
 		isCalendar = false;
 	}
 	
@@ -86,13 +86,13 @@ public class ChristmasController : MonoBehaviour {
 		{
 			CameraObj.transform.localPosition = new Vector3 (-420, 20, 530);
 			CameraObj.transform.localEulerAngles = new Vector3 (-10, 150, 0);
-			CameraObj.camera.fieldOfView = 22.8f;
+			CameraObj.GetComponent<Camera>().fieldOfView = 22.8f;
 			queryChan.GetComponent<QueryMechanimController>().ChangeAnimation(QueryMechanimController.QueryChanAnimationType.CH_Bang);
 
 			floor.SetActive(false);
-			house.animation["TurnHouseAnimation"].time = 0;
-			house.animation["TurnHouseAnimation"].speed = 1.0f;
-			house.animation.Play("TurnHouseAnimation");
+			house.GetComponent<Animation>()["TurnHouseAnimation"].time = 0;
+			house.GetComponent<Animation>()["TurnHouseAnimation"].speed = 1.0f;
+			house.GetComponent<Animation>().Play("TurnHouseAnimation");
 
 			isCalendar = true;
 			StopCoroutine("startAdvent");
@@ -105,13 +105,13 @@ public class ChristmasController : MonoBehaviour {
 			queryChan.GetComponent<QueryMechanimController>().ChangeAnimation(QueryMechanimController.QueryChanAnimationType.CH_Dance);
 			CameraObj.transform.localPosition = PosDefault;
 			CameraObj.transform.localEulerAngles = RotDefault;
-			CameraObj.camera.fieldOfView = FovDefault;
+			CameraObj.GetComponent<Camera>().fieldOfView = FovDefault;
 
 			floor.SetActive(true);
-			house.animation["TurnHouseAnimation"].time = 0;
+			house.GetComponent<Animation>()["TurnHouseAnimation"].time = 0;
 			//house.animation["TurnHouseAnimation"].time = house.animation["TurnHouseAnimation"].clip.length;
-			house.animation["TurnHouseAnimation"].speed = -1.0f;
-			house.animation.Play("TurnHouseAnimation");
+			house.GetComponent<Animation>()["TurnHouseAnimation"].speed = -1.0f;
+			house.GetComponent<Animation>().Play("TurnHouseAnimation");
 
 			disableClendars (1);
 			
@@ -177,13 +177,13 @@ public class ChristmasController : MonoBehaviour {
 		if (modeAdvent == true)
 		{
 			yield return new WaitForSeconds(1.0f);
-			lightDirectional.light.intensity = 0.1f;
-			lightSpot.light.range = 1000;
+			lightDirectional.GetComponent<Light>().intensity = 0.1f;
+			lightSpot.GetComponent<Light>().range = 1000;
 		}
 		else
 		{
-			lightDirectional.light.intensity = 0.5f;
-			lightSpot.light.range = 0;
+			lightDirectional.GetComponent<Light>().intensity = 0.5f;
+			lightSpot.GetComponent<Light>().range = 0;
 		}
 	}
 	

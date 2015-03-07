@@ -82,6 +82,6 @@ public class GhostController : MonoBehaviour {
 		if (index < 0 || index >= faceTextures.Length) {
 			return;
 		}
-		renderer.material.SetTexture("_Face_texture", faceTextures[index]);
+		GetComponent<Renderer>().material.SetTexture("_Face_texture", faceTextures[index]);
 	}
 }
