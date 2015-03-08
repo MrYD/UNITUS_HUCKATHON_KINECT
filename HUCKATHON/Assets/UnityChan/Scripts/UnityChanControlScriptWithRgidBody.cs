@@ -100,6 +100,11 @@ namespace UnityChan
 						anim.SetBool ("Jump", true);		// Animatorにジャンプに切り替えるフラグを送る
 					}
 				}
+				if (currentBaseState.nameHash == idleState)
+				{
+					rb.AddForce(Vector3.up*jumpPower,ForceMode.VelocityChange);
+					anim.SetBool("Jump",true);
+				}
 			}
 		
 
@@ -122,7 +127,7 @@ namespace UnityChan
 		// JUMP中の処理
 		// 現在のベースレイヤーがjumpStateの時
 		else if (currentBaseState.nameHash == jumpState) {
-				cameraObject.SendMessage ("setCameraPositionJumpView");	// ジャンプ中のカメラに変更
+				//cameraObject.SendMessage ("setCameraPositionJumpView");	// ジャンプ中のカメラに変更
 				// ステートがトランジション中でない場合
 				if (!anim.IsInTransition (0)) {
 				
@@ -164,7 +169,7 @@ namespace UnityChan
 				}
 				// スペースキーを入力したらRest状態になる
 				if (Input.GetButtonDown ("Jump")) {
-					anim.SetBool ("Rest", true);
+					//anim.SetBool ("Rest", true);
 				}
 			}
 		// REST中の処理
@@ -177,7 +182,7 @@ namespace UnityChan
 				}
 			}
 		}
-
+		/*
 		void OnGUI ()
 		{
 			GUI.Box (new Rect (Screen.width - 260, 10, 250, 150), "Interaction");
@@ -188,7 +193,7 @@ namespace UnityChan
 			GUI.Label (new Rect (Screen.width - 245, 110, 250, 30), "Left Control : Front Camera");
 			GUI.Label (new Rect (Screen.width - 245, 130, 250, 30), "Alt : LookAt Camera");
 		}
-
+		*/
 
 		// キャラクターのコライダーサイズのリセット関数
 		void resetCollider ()

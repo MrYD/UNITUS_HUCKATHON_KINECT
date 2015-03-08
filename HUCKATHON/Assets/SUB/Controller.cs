@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 
 public class Controller : MonoBehaviour {
@@ -19,8 +20,7 @@ public class Controller : MonoBehaviour {
 	}
 	Rigidbody _cRigidbody;
 
-	Vector3 inputHor;
-	Vector3 inputVer;
+	Vector3 input;
 
 	// Use this for initialization
 	void Start () {
@@ -33,12 +33,11 @@ public class Controller : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		cRigidbody.AddForce(inputVer*15);
-
+		cRigidbody.AddForce(input*14);
+		cTransform.RotateAround(new Vector3(0,1,0),0);
 	}
 
 	private void GetInput() {
-		inputVer = new Vector3(0, 0, Input.GetAxisRaw("Vertical"));
-		inputHor = new Vector3(0,Input.GetAxisRaw("Horizontal"),0);
+		input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 	}
 }
