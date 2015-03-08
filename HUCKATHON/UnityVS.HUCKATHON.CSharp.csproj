@@ -7,16 +7,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{962184A1-E562-A082-6692-DD928B01623C}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.0.0f4</UnityVersion>
@@ -54,6 +52,9 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="NuiServiceInterface">
       <HintPath>Assets\Plugins\NuiServiceInterface.dll</HintPath>
     </Reference>
@@ -88,6 +89,7 @@
     <Compile Include="Assets\PQAssets\Query-Chan\Scripts\QueryEmotionalController.cs" />
     <Compile Include="Assets\PQAssets\Query-Chan\Scripts\QueryMechanimController.cs" />
     <Compile Include="Assets\PQAssets\Query-Chan\Scripts\QuerySoundController.cs" />
+    <Compile Include="Assets\SUB\Controller.cs" />
     <Compile Include="Assets\SfNuiControl\RootObject.cs" />
     <Compile Include="Assets\SfNuiControl\Script\BaseNuiProcessor.cs" />
     <Compile Include="Assets\SfNuiControl\Script\INuiProcessor.cs" />
