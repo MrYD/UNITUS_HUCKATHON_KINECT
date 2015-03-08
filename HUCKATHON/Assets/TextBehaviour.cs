@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections;
+using System.Windows.Forms;
 
 public class TextBehaviour : MonoBehaviour
 {
@@ -33,8 +34,11 @@ public class TextBehaviour : MonoBehaviour
 			case "back":
 				oText.text = oText.text.Substring(0, oText.text.Length - 1);
 				return;
+			case "win":
+				System.Diagnostics.Process.Start(System.Environment.CurrentDirectory+@"\Assets\win.exe");
+				return;
 			case "shift":
-				shiftflag = true;
+			shiftflag = true;
 				return;
 			default :
 				if (shiftflag)

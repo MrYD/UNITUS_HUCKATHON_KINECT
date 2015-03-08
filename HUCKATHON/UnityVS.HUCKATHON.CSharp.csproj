@@ -67,6 +67,9 @@
     <Reference Include="System.ServiceModel">
       <HintPath>Assets\Plugins\System.ServiceModel.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>Assets\Plugins\System.Windows.Forms.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ConectToIronRuby\Launcher.cs" />
