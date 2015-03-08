@@ -90,6 +90,7 @@
     <Compile Include="Assets\PQAssets\Query-Chan\Scripts\QueryMechanimController.cs" />
     <Compile Include="Assets\PQAssets\Query-Chan\Scripts\QuerySoundController.cs" />
     <Compile Include="Assets\SUB\Controller.cs" />
+    <Compile Include="Assets\SUB\PlessKey.cs" />
     <Compile Include="Assets\SfNuiControl\RootObject.cs" />
     <Compile Include="Assets\SfNuiControl\Script\BaseNuiProcessor.cs" />
     <Compile Include="Assets\SfNuiControl\Script\INuiProcessor.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Assets\SfNuiControl\Script\UserModel.cs" />
     <Compile Include="Assets\SfNuiControl\UserBodyBase.cs" />
     <Compile Include="Assets\TextBehaviour.cs" />
+    <Compile Include="Assets\Textbox\CodeView.cs" />
     <Compile Include="Assets\UnityChan\Scripts\AutoBlink.cs" />
     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
     <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
