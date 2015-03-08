@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3358366}
   - 64: {fileID: 6434258}
   - 23: {fileID: 2355270}
+  - 114: {fileID: 11452158}
   m_Layer: 0
   m_Name: key
   m_TagString: Untagged
@@ -73,6 +74,19 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &11452158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaac35af49e5db44812562f4b4c07eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  s: 
+  tb: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

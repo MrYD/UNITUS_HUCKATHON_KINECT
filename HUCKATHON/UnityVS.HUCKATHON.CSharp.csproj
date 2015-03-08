@@ -70,8 +70,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ConectToIronRuby\Launcher.cs" />
-    <Compile Include="Assets\IModelControl.cs" />
     <Compile Include="Assets\InputAssistant\InputAsistant.cs" />
+    <Compile Include="Assets\KeyInputer.cs" />
     <Compile Include="Assets\Kinect2Lib\Kinect2LibMock.cs" />
     <Compile Include="Assets\ModelController.cs" />
     <Compile Include="Assets\PQAssets\Query-Chan\Scripts\1.Locomotion\LocomotionGUI.cs" />
@@ -116,6 +116,7 @@
     <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
     <Compile Include="Assets\UnityChan\SplashScreen\Scripts\SplashScreen.cs" />
     <Compile Include="Assets\UnityChanController.cs" />
+    <Compile Include="Assets\UnityVS\IModelControl.cs" />
     <Compile Include="Assets\UtilityExtension.cs" />
   </ItemGroup>
   <ItemGroup>
